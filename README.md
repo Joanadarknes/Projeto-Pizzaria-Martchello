@@ -39,7 +39,7 @@ $ python
 ```
 Execute
 ```
-$ python traino.py e copie a URL com a porta de entrada. Ex: http://000.0.0.0:0000 e colo no navegador
+$ python traino.py e copie a URL com a porta de entrada. Ex: http://000.0.0.0:0000 e cole no navegador
 ```
 ![image](https://user-images.githubusercontent.com/95653155/199626501-6ba81eab-fad3-4f62-932e-ebfe6c5db7c8.png)
 
