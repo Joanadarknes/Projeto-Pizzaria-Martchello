@@ -53,10 +53,7 @@
  
 ## Clone o repositorio
 ```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
-$ cd chatbot-deployment
-$ python3 -m venv venv
-$ . venv/bin/activate
+$ git clone https://github.com/Joanadarknes/Projeto-Pizzaria-Martchello.git
 ```
 Instalar as dependências
 ```
