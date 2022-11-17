@@ -21,65 +21,26 @@
 - O usuario gostaria alterar a sua senha;
 
  
- 
- #### ⚙️ Para o ChatBot:
- 
- 
- 1-pizza tamanho: pequeno|medio| grande. 👍
- 
- 2-Escolha quantos sabores desejar de 1 a 4. 👍
- 
- 3-Escolha o sabor 1 e se tiver escolhido 4 sabores, escolha 4 sabores da lista. 👍
- 
- 4-O Bot lança a lista de sabores de 1 a 10 (Se não tiver o sabor desejado, inserir no campo digitavel);
- 
- 5-Após a lista, deverá ter um campo para o cliente digitar o sabor desejado.
- 
- 6-formato de borda  recheada/tradicional.
- 
- 7-Lista de opções de recheios para borda.
- 
- 8-Endereço de entrega
- 
- 9-valor do pedido.
- 
- 10-forma de pagamento: pagamento na entrega/ no site
- 
- 11-pagamento: cartão,pix ou dinheiro
- 
- 12-Seu pedido está sendo feito  e jaja sai para entrega
- 
- 13-O prazo de entrega é de 40 minutos.
- 
 ## Clone o repositorio
 ```
 $ git clone https://github.com/Joanadarknes/Projeto-Pizzaria-Martchello.git
 ```
-Instalar as dependências
+Instale as dependências
 ```
-$ (venv) pip install Flask torch torchvision nltk
+$ pip install Flask 
+$ pip install torch torchvision 
+$ pip install nltk
 ```
-instalar pacote nltk
+instale o pacote nltk
 ```
-$ (venv) python
+$ python
 >>> import nltk
 >>> nltk.download('punkt')
 ```
-Modify `intents.json` with different intents and responses for your Chatbot
-
-Run
+Execute
 ```
-$ (venv) python train.py
+$ python traino.py e copie a URL com a porta de entrada. Ex: http://000.0.0.0:0000 e colo no navegador
 ```
-This will dump data.pth file. And then run
-the following command to test it in the console.
-```
-$ (venv) python chat.py
-```
-
-Now for deployment follow my tutorial to implement `app.py` and `app.js`.
-
-
 ![image](https://user-images.githubusercontent.com/95653155/199626501-6ba81eab-fad3-4f62-932e-ebfe6c5db7c8.png)
 
 
