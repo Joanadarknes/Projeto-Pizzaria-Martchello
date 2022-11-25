@@ -16,9 +16,10 @@
 ## 📋 Histórias
 
  ### 📁 Banco de dados:
-- O usuario gostaria de cadastra-se no site;
-- O usuario gostaria de logar no sistema com seu usuario e senha;
-- O usuario gostaria alterar a sua senha;
+
+ 
+- Link do Banco de dados: https://console.firebase.google.com/u/0/project/pizzaria-d676d/authentication/users
+
 
  
 ## Clone o repositorio

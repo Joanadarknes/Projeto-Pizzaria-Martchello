@@ -10,14 +10,18 @@
 </head>
 <body>
     <nav>
+      
         <h2 class="logo">Martchello <span> Pizzaria </span></h2>
+        <button id="btnsair" onclick="logout()">Sair</button>
         <button id= "buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
             <ul>
+                <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
                 <li><a id="buttonpdrest" style="display: none;" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-                <li><a id="buttonpdclt"  style="display: none;" href="PedidoCliente">Pedidos-Clientes</a></li>
+                <li><a id="buttonpdclt"  style="display: none;" href="PedidoCliente">Andamento do pedido</a></li>
                 <li><a id="ajustee"  style="display: none;"href="Sobre">Sobre Nós</a></li>
-                <li><a id="navbarDropdown" data-toggle="dropdown" style="color: red;"></a></li>
+               
             </ul>
+           
             <div class="menu-openner"><span>0</span>🛒</div>
     </nav>
     
@@ -235,6 +239,7 @@
     <script type="text/javascript" src="{{ url_for('static', filename='auth.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='init.js') }}"></script>
     <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
+    
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
@@ -243,11 +248,5 @@
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
-    <script>
-      $("#sidebar-toggle").click(function (e) {
-        e.preventDefault()
-        $("#page").toggleClass("toggled")
-      })
-    </script>
 </body>
 </html>

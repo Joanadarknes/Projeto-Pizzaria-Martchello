@@ -39,9 +39,12 @@ body::-webkit-scrollbar-thumb {
 .logo{
     color: white;
     font-size: 28px;
-    margin-right: 20.50%;
+    margin-right: 11.5%;
     padding-top: 1.9%;
     font-family: 'Josefin Sans', sans-serif;
+}
+.logo, span{
+    color: rgb(255, 0, 0);
 }
 
 span{
@@ -1145,4 +1148,12 @@ footer{
   .bottom .center a{
     color: #d32f2f;
     text-decoration: none;
+  }
+
+  #btnsair{
+    text-align: center;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    display: none;
+    margin-top: 1.6% !important;
   }
