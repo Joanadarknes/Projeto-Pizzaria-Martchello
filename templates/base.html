@@ -10,14 +10,18 @@
 </head>
 <body>
     <nav>
+      
         <h2 class="logo">Martchello <span> Pizzaria </span></h2>
-        <button type="button"><a href="cadastro">Cadastre-se</a></button>
-     
+        <button id="btnsair" onclick="logout()">Sair</button>
+        <button id= "buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
             <ul>
-                <li><a href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-                <li><a href="PedidoCliente">Pedidos-Clientes</a></li>
-                <li><a href="Sobre">Sobre Nós</a></li>
+                <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
+                <li><a id="buttonpdrest" style="display: none;" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
+                <li><a id="buttonpdclt"  style="display: none;" href="PedidoCliente">Andamento do pedido</a></li>
+                <li><a id="ajustee"  style="display: none;"href="Sobre">Sobre Nós</a></li>
+               
             </ul>
+           
             <div class="menu-openner"><span>0</span>🛒</div>
     </nav>
     
@@ -41,7 +45,7 @@
                        <span>Total</span>
                        <span>R$ --</span>
                    </div>
-                   <div class="cart--finalizar" href="PedidoCliente">Finalizar a compra</div>
+                   <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
                </div>
            </div>
        </aside>
@@ -183,7 +187,7 @@
             <div class="content">
                 <div class="cnpj">                        
                     <span class="fas fa-bookmark"></span>
-                    <span class="text">XX. XXX. XXX/0001-XX</span>
+                    <span class="text">12. 0000. 123/0001-XX</span>
                 </div>
 
                 <div class="telefone">
@@ -193,7 +197,7 @@
 
                 <div class="email">
                     <span class="fas fa-envelope"></span>
-                    <span class="text">exemplo@exemplo.com</span>
+                    <span class="text">pizzaria@martchello.com</span>
                 </div>
             </div>
         </div>
@@ -223,9 +227,26 @@
     <script>
         $SCRIPT_ROOT = {{ request.script_root|tojson }};
     </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.5.1.slim.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='firebase-firestore.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='firebase-auth.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='firebase-app.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='auth.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='init.js') }}"></script>
     <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
+    
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
 </body>
 </html>

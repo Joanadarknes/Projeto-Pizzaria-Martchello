@@ -84,23 +84,29 @@
         </nav>
 
         <div class="container-fluid">
-          <h1 class="mt-4">Minha lista de tarefas.</h1>
-          <div class="row">
-            <input
-              id="newItem"
-              name="newItem"
-              class="form-control col-5 ml-2"
-              type="text"
-              placeholder="Nova tarefa"
-            />
-            <button class="btn btn-primary ml-1" onclick="addTask()">
-              Adicionar
-            </button>
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title mt-4">Meu perfil</h1>
+              <h5 id="userInfo" class="card-subtitle mb-5">Perfil</h5>
+              <form>
+                <div class="form-group">
+                  <label for="inputFirstName">Nome</label>
+                  <input id="inputFirstName" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="inputLastName">Sobrenome</label>
+                  <input id="inputLastName" type="text" class="form-control" />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="saveProfile()"
+                >
+                  Salvar perfil
+                </button>
+              </form>
+            </div>
           </div>
-
-          <ul id="itemList" class="list-group list-group-flush">
-            <li class="list-group-item">Carregando ...</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -127,7 +133,7 @@
 
     <script src="./js/init.js"></script>
     <script src="./js/auth.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/profile.js"></script>
     <script>
       $("#sidebar-toggle").click(function (e) {
         e.preventDefault()
