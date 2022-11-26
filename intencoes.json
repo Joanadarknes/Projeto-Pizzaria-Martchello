@@ -3,12 +3,12 @@
         {
             "acao": "saudacao",
             "padroes": [
-                "Ola",
-                "Oi"
+                "!Ola",
+                "!Oi"
                 
             ],
             "respostas": [
-                "Ola, boa noite, eu me chamo Arthurito, e irei te ajudar com o seu atendimento:\n <br><br> !PizzaInfo Sabor: para ver as infos sobre a pizza desejada.\n <br><br> !Sabores: para ver o nosso menu de sabores.\n <br><br> !Promocao: para ver as promocoes da semana.\n <br><br> !Tamanho: para ver o tamanho das pizzas em fatias <br><br> !Atendimento: para iniciar o seu atendimento."
+                "Ola, boa noite, eu me chamo Arthurito, e irei te ajudar com o seu atendimento:\n <br><br> !PizzaInfo Sabor: para ver as infos sobre a pizza desejada.\n <br><br> !Sabores: para ver o nosso menu de sabores.\n <br><br> !Promocoes/Promocao: para ver as promocoes da semana.\n <br><br> !Tamanho: para ver o tamanho das pizzas em fatias <br><br> !Atendimento: para iniciar o seu atendimento."
             ]
         },
         {
@@ -32,7 +32,8 @@
         {
             "acao":"pizza_promocao",
             "padroes":[
-                "!Promocoes"
+                "!Promocoes",
+                "!Promocao"
             ],
             "respostas":[
                 "Promocao da Semana!!!\n <br><br> Salgadas:\n <br><br> Mussarela: R$22,00 <br> Quatro Queijos: R$25,00 <br> Portuguesa: R$27,00 <br><br> Doce:\n <br><br> Banana com canela: R$28,00"
@@ -116,265 +117,368 @@
                 "!Atendimento"
             ],
             "respostas": [
-                "Certo! Irei fazer o seu atendimento, que tamanho de pizza o(a) senhor(a) deseja?"
+                "Certo! Irei fazer o seu atendimento, que tamanho de pizza o(a) senhor(a) deseja?<br><br>Comandos: <br><br> Pizza Pequena: <br>!Pizza pequena <br><br> Pizza Media: <br>!Pizza media <br><br> Pizza Grande: <br>!Pizza grande"
             ]
         },
         {
             "acao": "tamanho_pequeno",
             "padroes":[
-                "Uma pizza de tamanho pequeno",
-                "Pizza pequena"
+                "!Pizza pequena"
+                
             ],
             "respostas": [
-                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza completa ou mista?"
+                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza completa ou mista? <br><br> Comandos: <br><br> Pizza Completa: <br> !Pizza completa <br><br> Pizza Mista <br> !Pizza mista"
             ]
         },
         {
             "acao": "tamanho_medio",
             "padroes":[
-                "Uma pizza de tamanho medio",
-                "Pizza media"
+                "!Pizza media"
             ],
             "respostas": [
-                "Certo! uma pizza media exelente escolha, agora, voce deseja uma pizza completa ou mista?"
+                "Certo! uma pizza media exelente escolha, agora, voce deseja uma pizza completa ou mista? <br><br> Comandos: <br><br> Pizza Completa: <br> !Pizza completa <br><br> Pizza Mista <br> !Pizza mista"
             ]
         },
         {
             "acao": "tamanho_grande",
             "padroes":[
-                "Uma pizza de tamanho grande",
-                "Pizza grande"
+                "!Pizza grande"
             ],
             "respostas": [
-                "Certo! uma pizza grande exelente escolha, agora, voce deseja uma pizza completa ou mista?"
+                "Certo! uma pizza grande exelente escolha, agora, voce deseja uma pizza completa ou mista? <br><br> Comandos: <br><br> Pizza Completa: <br> !Pizza completa <br><br> Pizza Mista <br> !Pizza mista"
             ]
         },
         {
             "acao": "completa",
             "padroes":[
-                "Completa"
+                "!Pizza completa"
             ],
             "respostas": [
-                "Maravilha, qual sabor o senhor(a) deseja? "
+                "Maravilha, qual sabor o senhor(a) deseja? <br><br> Comando: <br><br> !Completa <Sabor> <br><br> Ex: !Completa Mussarela"
             ]
         },
         {
             "acao": "meio_a_meio",
             "padroes":[
-                "Mista"
+                "!Pizza mista"
             ],
             "respostas": [
-                "Maravilha, qual primeiro sabor o(a) senhor(a) deseja?"
+                "Maravilha, qual primeiro sabor o(a) senhor(a) deseja? <br><br> Comando: <br><br> !Mista primeiro sabor <br><br> Ex: !Mista  Mussarela <br><br> Lista de primeiro sabor: <br><br> Calabresa <br> Mussarela <br> Quatro queijos <br> Banana com canela"
             ]
         },
         {
             "acao": "completa_sabor_calabresa",
             "padroes":[
-                "Uma pizza completa de calabresa",
-                "Sabor calabresa"
+                "!Completa calabresa"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa de calabresa, ela ira custar R$26,00"
+                "Otima escolha! uma pizza completa de calabresa, ela ira custar R$26,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
-            "acao": "completa_sabor_americana",
+            "acao": "completa_sabor_mussarela",
             "padroes":[
-                "Uma pizza completa de mussarela",
-                "Sabor mussarela"
+                "!Completa mussarela"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa de mussarela, ela ira custar R$25,00"
+                "Otima escolha! uma pizza completa de mussarela, ela ira custar R$25,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "completa_sabor_quatro_queijos",
             "padroes":[
-                "Uma pizza completa de quatro queijos",
-                "Sabor quatro queijos"
+                "!Completa quatro queijos"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa de quatro queijos, ela ira custar R$28,00"
+                "Otima escolha! uma pizza completa de quatro queijos, ela ira custar R$28,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "completa_sabor_brasileira",
             "padroes":[
-                "Uma pizza completa brasileira",
-                "Sabor brasileira"
+                "!Completa brasileira"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa brasileira, ela ira custar R$30,00"
+                "Otima escolha! uma pizza completa brasileira, ela ira custar R$30,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "completa_sabor_portuguesa",
             "padroes":[
-                "Uma pizza completa de portuguesa",
-                "Sabor portuguesa"
+                "!Completa portuguesa"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa de portuguesa, ela ira custar R$30,00"
+                "Otima escolha! uma pizza completa de portuguesa, ela ira custar R$29,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "completa_sabor_moda_da_casa",
             "padroes":[
-                "Uma pizza completa a moda da casa",
-                "Sabor Moda da Casa"
+                "!Completa moda da casa"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa a Moda da Casa, ela ira custar R$35,00"
+                "Otima escolha! uma pizza completa a Moda da Casa, ela ira custar R$35,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "completa_sabor_banana_com_canela",
             "padroes":[
-                "Uma pizza completa de banana com canela",
-                "Sabor banana com canela"
+                "!Completa banana com canela"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa de banana com canela, ela ira custar R$35,00"
+                "Otima escolha! uma pizza completa de banana com canela, ela ira custar R$35,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "completa_sabor_chocolate_com_morango",
             "padroes":[
-                "Uma pizza completa de chocolate com morango",
-                "Sabor chocolate com morango"
+                "!Completa chocolate com morango"
             ],
             "respostas": [
-                "Otima escolha! uma pizza completa de banana com canela, ela ira custar R$35,00"
+                "Otima escolha! uma pizza completa de chocolate com banana, ela ira custar R$35,00 <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "primeiro_sabor_misto",
             "padroes":[
-                "Calabresa",
-                "Mussarela",
-                "Quatro queijos",
-                "Banana com canela"
+                "!Mista calabresa",
+                "!Mista mussarela",
+                "!Mista quatro queijos",
+                "!Mista banana com canela"
             ],
             "respostas":[
-                "Primeiro sabor registrado! qual o segundo sabor?"
+                "Primeiro sabor registrado! qual o segundo sabor? <br><br> Comando: <br><br> !Mista segundo sabor <br><br> Ex: !Mista  Brasileira <br><br> Lista de segundo sabor: <br><br> Brasileira <br> Portuguesa <br> Moda da casa <br> Chocolate com morango"
             ]
         },
         {
             "acao": "segundo_sabor_misto",
             "padroes":[
-                "Brasileira",
-                "Portuguesa",
-                "Moda da Casa",
-                "Chocolate com morango"
+                "!Mista brasileira",
+                "!Mista portuguesa",
+                "!Mista moda da Casa",
+                "!Mista chocolate com morango"
             ],
             "respostas":[
-                "Pizza mista registrada! o valor e de R$XX,XX"
+                "Pizza mista registrada! o valor e de R$XX,XX. <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
             "acao": "forma_de_pagamento",
             "padroes":[
-                "Qual a forma de pagamento?",
-                "Aceitam pix?",
-                "Aceitam cartao de credito?",
-                "Aceitam dinheiro?"
+                "!Pagamento"
             ],
             "respostas": [
-                "Aceitamos todas as formas de pagamento: dinheiro, cartao de credito e pix"
+                "Aceitamos todas as formas de pagamento: dinheiro, cartao de credito e pix <br><br> Comando: <br><br> !Dinheiro <br> !Pix <br> !Cartao de credito"
             ]
         },
         {
             "acao": "pagar_pix",
             "padroes":[
-                "Irei pagar com pix",
-                "Pix"
+                "!Pix"
             ],
             "respostas": [
-                "Insira a sua chave pix"
+                "Opcao pix confirmada! Insira a sua chave pix <br><br> Comando: <br><br> !Telefone <br> !CPF"
             ]
         },
         {
-            "acao": "pagar_pix_chave",
+            "acao": "pagar_pix_chave_telefone",
             "padroes":[
-                "(11)9999-99999"
+                "!Telefone"
             ],
             "respostas": [
-                "Pagamento confirmado, deseja retirar na loja ou entregador?"
+                "Chave pix telefone, insira seu telefone <br><br> Comando: <br><br> !Telefone Numero <br><br> Ex: !Telefone (99)99999-9999"
+            ]
+        },
+        {
+            "acao": "pagar_pix_chave_telefone_confirmado",
+            "padroes":[
+                "!Telefone (99)99999-9999"
+            ],
+            "respostas": [
+                "Pagamento realizado! deseja retirar na loja ou entregador? <br><br> Comando: <br><br> !Retirar <br> !Entregador "
+            ]
+        },
+        {
+            "acao": "pagar_pix_chave_cpf",
+            "padroes":[
+                "!CPF"
+            ],
+            "respostas": [
+                "Chave pix telefone, insira seu CPF <br><br> Comando: <br><br> !CPF Numero do CPF <br><br> Ex: !CPF 000.000.000-00"
+            ]
+        },
+        {
+            "acao": "pagar_pix_chave_cpf_confirmado",
+            "padroes":[
+                "!CPF 000.000.000-00"
+            ],
+            "respostas": [
+                "Pagamento realizado! deseja retirar na loja ou entregador? <br><br> Comando: <br><br> !Retirar <br> !Entregador "
             ]
         },
         {
             "acao": "pagar_dinheiro",
             "padroes":[
-                "Irei pagar com dinheiro",
-                "Dinheiro"
+                "!Dinheiro"
             ],
             "respostas": [
-                "Pagamento confirmado, deseja retirar na loja ou entregador?"
+                "A opcao de dinheiro so este disponivel se for retirar na loja, deseja retirar na loja ? <br><br> Comando: <br><br> !Sim Retirar <br> !Nao Retirar"
+            ]
+        },
+        {
+            "acao": "pagar_dinheiro_sim",
+            "padroes":[
+                "!Sim Retirar"
+            ],
+            "respostas": [
+                "Opcao retirar na loja confirmada! sua pizza ficara pronta em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento "
+            ]
+        },
+        {
+            "acao": "pagar_dinheiro_nao",
+            "padroes":[
+                "!Nao Retirar"
+            ],
+            "respostas": [
+                "Opcao retirar na loja negada! Por favor pedimos que selecionasse outra forma de pagamento.  <br><br> Comando: <br><br> !Pix <br> !Cartao de credito <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
             ]
         },
         {
             "acao": "pagar_cartao_de_credito",
             "padroes":[
-                "Irei pagar com cartao de credito",
-                "Cartao de credito"
+                "!Cartao de credito"
             ],
             "respostas": [
-                "Pagamento confirmado, deseja retirar na loja ou entregador?"
+                "Opcao cartao de credito confirmada! Deseja pagar na loja ? <br><br> Comando: <br><br> !Pagar na loja <br> !Pagar usando bot <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito_loja",
+            "padroes":[
+                "!Pagar na loja"
+            ],
+            "respostas": [
+                "Opcao pagar na loja (cartao de credito) confirmada! sua pizza ficara pronta em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito_bot",
+            "padroes":[
+                "!Pagar usando bot"
+            ],
+            "respostas": [
+                "Opcao pagar usando o bot confirmada! Insira os dados do seu cartao: <br><br> Comando: <br><br> !Nome do titular <br><br> Ex: !Nome XXXXX"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito_bot_titular",
+            "padroes":[
+                "!Nome XXXXX"
+            ],
+            "respostas": [
+                "Titular confirmado! insira o numero do cartao <br><br> Comando: <br><br> !Numero do cartao <br><br> Ex: !Numero XXXX XXXX XXXX XXXX"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito_bot_numero",
+            "padroes":[
+                "!Numero XXXX XXXX XXXX XXXX"
+            ],
+            "respostas": [
+                "Numero confirmado! insira a data de validade do cartao <br><br> Comando: <br><br> !Validade do cartao <br><br> Ex: !Validade XX/YYYY"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito_bot_validade",
+            "padroes":[
+                "!Validade XX/YYYY"
+            ],
+            "respostas": [
+                "Validade confirmada! insira o numero de seguranca do cartao <br><br> Comando: <br><br> !Seguranca do cartao <br><br> Ex: !Seguranca XXX"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito_bot_seguranca",
+            "padroes":[
+                "!Seguranca XXX"
+            ],
+            "respostas": [
+                "Numero de seguranca confirmada! Pagamento realizado. <br><br> Deseja retirar na loja ou entregador? <br><br> Comando: <br><br> !Retirar <br> !Entregador "
             ]
         },
         {
             "acao": "retirar_loja",
             "padroes":[
-                "Irei retirar na pizzaria",
-                "Retirar"
+                "!Retirar"
             ],
             "respostas": [
-                "Retirar na loja, seu pedido ficara pronto em XX minutos, obrigado pela preferencia! <br><br> Digite 'sair' para encerrar o atendimento "
+                "Opcao Retirar na loja confirmada, seu pedido ficara pronto em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento "
             ]
         },
         {
             "acao": "entregador",
             "padroes":[
-                "Entregador"
+                "!Entregador"
             ],
             "respostas": [
-                "Entregador, O(A) senhor(a) possui um cadastro ?"
+                " Opcao Entregador confirmada, por favor insira o seu CEP. <br><br> Comando: <br><br> !CEP <br><br> Ex: !CEP XXXXX - XXX"
             ]
         },
         {
-            "acao": "entregador_cadastro",
+            "acao": "entregador_CEP",
             "padroes":[
-                "Sim"
+                "!CEP XXXXX - XXX"
             ],
             "respostas": [
-                "Cadastro cliente: XXXXXXXX / Endereco: XXXXXXXX <br><br> Em XX minutos o entregador estara em sua casa! Obrigado pela preferencia! <br><br> Digite 'sair' encerrar o atendimento"
+                "CEP confirmado, por favor insira o numero da casa. <br><br> Comando: <br><br> !Um Numero <br> !Dois Numeros <br> !Tres Numeros <br> !Quatro numeros <br><br> Ex: !Dois numero XX"
             ]
         },
         {
-            "acao": "entregador_nao_cadastrado",
+            "acao": "entregador_numeros",
             "padroes":[
-                "Nao"
+                "!Um numero X",
+                "!Dois numero XX",
+                "!Tres  numeros XXX",
+                "!Quatro numeros XXXX"
             ],
             "respostas": [
-                "Por favor insira o seu nome e seu endereco entre '/' <br><br> Ex: nome: Arthurito / Endereco: XXXXXXXX"
+                "Numero confirmado, casa identificada o prazo de entrega sera em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento  "
             ]
         },
         {
-            "acao": "colocando_informaçoes_da_entrega",
+            "acao": "cancelamento",
             "padroes":[
-                "Nome: XXXXXXXX / Endereco: XXXXXXXX"
+                "!Cancelar"
             ],
             "respostas": [
-                "Em XX minutos o entregador estara em sua casa! Obrigado pela preferencia! <br><br> Digite 'sair' encerrar o atendimento"
+                "Deseja realmente cancelar seu pedido ? caso queira refazer ou cancelar o mesmo digite os seguintes comandos. <br><br> Comando: <br><br> !Sim Cancelar <br> !Refazer"
+            ]
+        },
+        {
+            "acao": "sim_cancelamento",
+            "padroes":[
+                "!Sim Cancelar"
+            ],
+            "respostas": [
+                "Pedido cancelado com sucesso! Arthurito fica triste por nao conseguir servir voce de uma forma satisfatoria :("
+            ]
+        },
+        {
+            "acao": "refazer",
+            "padroes":[
+                "!Refazer"
+            ],
+            "respostas": [
+                "Refazer! Pedido descartado por favor insira o segundo comando para refazer o pedido! <br><br> Comando: <br><br> !Atendimento"
             ]
         },
         {
             "acao": "despedida",
             "padroes":[
-                "Sair"
+                "!Sair"
             ],
             "respostas": [
-                "Atendimento encerrado!"
+                "Atendimento encerrado! Arthurito agradece a preferencia :)"
             ]
         }
     ]
