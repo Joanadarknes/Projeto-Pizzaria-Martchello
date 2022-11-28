@@ -153,6 +153,7 @@ justify-content: center;
   }
 
   .cardsb h2{
+    padding-bottom: 10px;
     padding-top: 40px;
     align-items: center;
     color: white;
@@ -193,4 +194,4 @@ justify-content: center;
       box-shadow: 0 0 0 0 var(--hoverContorno);
     }
   }
-  
+

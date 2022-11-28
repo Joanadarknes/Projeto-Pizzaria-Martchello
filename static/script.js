@@ -176,7 +176,7 @@ const abrirCarrinho = () => {
 const fecharCarrinho = () => {
     // fechar o carrinho com o botão X no modo mobile
     seleciona('.menu-closer').addEventListener('click', () => {
-        seleciona('aside').style.right = '100vw' // usando 100vw ele ficara fora da tela
+        seleciona('aside').style.right = '100vw'
         seleciona('header').style.display = 'flex'
     })
 }
@@ -276,6 +276,12 @@ const finalizarCompra = () => {
         seleciona('aside').classList.remove('show')
         seleciona('aside').style.left = '100vw'
         seleciona('header').style.display = 'flex'
+        let nomepd = document.getElementById('nomepd').innerText;
+        nomepd = nomepd.replace('R$ ', '').replace(',', '-');
+        window.location.href = 'http://127.0.0.1:5000/PedidoCliente?pizzaName' + nomepd;
+        let valorpd = document.getElementById('valorpd').innerText;
+        valorpd = valorpd.replace('R$ ', '').replace(',', '-');
+        window.location.href = 'http://127.0.0.1:5000/PedidoCliente?total=' + nomepd  + valorpd;
     })
 }
 

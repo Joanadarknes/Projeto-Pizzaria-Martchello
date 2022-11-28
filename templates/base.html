@@ -9,6 +9,29 @@
     <title>Pizzaria Martchello</title>
 </head>
 <body>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Pizzas</h1>
+            <div  id="nomepd" class="cart"></div>
+            <div  class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span id="valorpd">R$ --</span>
+                </div>
+                <div class="cart--finalizar"><a>Finalizar a compra</a></div>
+            </div>
+        </div>
+    </aside>
+    
     <nav>
       
         <h2 class="logo">Martchello <span> Pizzaria </span></h2>
@@ -17,7 +40,6 @@
             <ul>
                 <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
                 <li><a id="buttonpdrest" style="display: none;" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-                <li><a id="buttonpdclt"  style="display: none;" href="PedidoCliente">Andamento do pedido</a></li>
                 <li><a id="ajustee"  style="display: none;"href="Sobre">Sobre Nós</a></li>
                
             </ul>
@@ -27,28 +49,7 @@
     
     <section class="inicio">
         <!-- aside do carrinho -->
-        <aside>
-           <div class="cart--area">
-               <div class="menu-closer">❌</div>
-               <h1>Suas Pizzas</h1>
-               <div class="cart"></div>
-               <div class="cart--details">
-                   <div class="cart--totalitem subtotal">
-                       <span>Subtotal</span>
-                       <span>R$ --</span>
-                   </div>
-                   <div class="cart--totalitem desconto">
-                       <span>Desconto</span>
-                       <span>R$ --</span>
-                   </div>
-                   <div class="cart--totalitem total big">
-                       <span>Total</span>
-                       <span>R$ --</span>
-                   </div>
-                   <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
-               </div>
-           </div>
-       </aside>
+        
        <!-- /aside do carrinho -->
        <header>
 
@@ -56,7 +57,7 @@
             <h1>Pizzaria Martchello</h1>
             <div>
             <h2>Mama mia martchello!</h2>
-            <a href="#PizzasProntas" class="vermenu">Ver menu</a>
+            <a id="vermenujs" href="#PizzasProntas" class="vermenu">Ver menu</a>
 
             <a href="#PizzasProntas" class="vermenumobile"><img src="./images/seta_pra_baixo-removebg-preview.png" alt=""></a>
         </div>
@@ -158,7 +159,9 @@
             </div>
         </div>
         <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            <span>Faça seu pedido!</span>
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" />
+            </button>
         </div>
     </div>
 </div>

@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <title>Pedido do Cliente</title>
   </head>
   <body style="background-color: white;">
@@ -22,21 +24,15 @@
    
           <ul>
             <li><a href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-            <li><a href="pedidoCliente"  style="color:red;">Pedidos-Clientes</a></li>
+            <li><a href="pedidoCliente"  style="color:red;">Andamento do pedido</a></li>
               <li><a href="Sobre">Sobre Nós</a></li>
           </ul>
-
   </nav>
-  <aside>
-    <div class="cart--area">
-        <h1>Suas Pizzas</h1>
-        <div class="cart"></div>
-        <div class="cart--details">
 
-            <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
-        </div>
-    </div>
-</aside>
+
+  <h2 id="resultadoPedido"> </h2>
+  
+  
   </body>
 
   <script>
@@ -63,10 +59,9 @@
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
 <script>
-  $("#sidebar-toggle").click(function (e) {
-    e.preventDefault()
-    $("#page").toggleClass("toggled")
-  })
+const urlParams = new URLSearchParams(window.location.search);
+const total = urlParams.get('total').replace('-', ',');
+document.getElementById('resultadoPedido').innerText = total;
 </script>
   </body>
 </html>

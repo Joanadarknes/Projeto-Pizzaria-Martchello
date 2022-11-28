@@ -1,6 +1,6 @@
 var botaocads = document.getElementById("buttoncadastro");
 var botaocads2 = document.getElementById("buttonpdrest");
-var botaocads3 = document.getElementById("buttonpdclt");
+
 var ajustando = document.getElementById("ajustee");
 var btnsair = document.getElementById("btnsair");
 
@@ -17,7 +17,7 @@ function getUser() {
       userLabel.innerHTML = user.email
       botaocads.outerHTML = "";
       botaocads2.style.display = 'flex'
-      botaocads3.style.display = 'flex'
+
       ajustando.style.display = 'flex'
       btnsair.style.display= 'flex'
      
