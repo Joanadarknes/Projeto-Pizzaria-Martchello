@@ -27,16 +27,7 @@
           </ul>
 
   </nav>
-  <aside>
-    <div class="cart--area">
-        <h1>Suas Pizzas</h1>
-        <div class="cart"></div>
-        <div class="cart--details">
-
-            <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
-        </div>
-    </div>
-</aside>
+ <h2 id="resultadopd"></h2>
   </body>
 
   <script>
@@ -63,10 +54,9 @@
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
 <script>
-  $("#sidebar-toggle").click(function (e) {
-    e.preventDefault()
-    $("#page").toggleClass("toggled")
-  })
+const urlParams = new URLSearchParams(window.location.search);
+const total = urlParams.get('total').replace('-', ',');
+document.getElementById('resultadopd') + total;
 </script>
   </body>
 </html>

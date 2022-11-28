@@ -276,6 +276,12 @@ const finalizarCompra = () => {
         seleciona('aside').classList.remove('show')
         seleciona('aside').style.left = '100vw'
         seleciona('header').style.display = 'flex'
+        let nomepd = document.getElementById('nomepd').innerText;
+        nomepd = nomepd.replace('R$ ', '').replace(',', '-');
+        window.location.href = 'http://127.0.0.1:5000/PedidoCliente?pizzaName' + nomepd;
+        let valorpd = document.getElementById('valorpd').innerText;
+        valorpd = valorpd.replace('R$ ', '').replace(',', '-');
+        window.location.href = 'http://127.0.0.1:5000/PedidoCliente?total=' + nomepd  + valorpd;
     })
 }
 
@@ -314,7 +320,5 @@ adicionarNoCarrinho()
 atualizarCarrinho()
 fecharCarrinho()
 finalizarCompra()
-
-
 
 
