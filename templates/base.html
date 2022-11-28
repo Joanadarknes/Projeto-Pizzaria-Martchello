@@ -33,17 +33,23 @@
     </aside>
     
     <nav>
-      
+        <!-- hamburguer -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+         </label>
+
         <h2 class="logo">Martchello <span> Pizzaria </span></h2>
         <button id="btnsair" onclick="logout()">Sair</button>
-        <button id= "buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
+        <button id="buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
             <ul>
+                <button id="buttoncadastro-second" type="button"><a href="login">Cadastre-se</a></button>
                 <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
                 <li><a id="buttonpdrest" style="display: none;" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
                 <li><a id="ajustee"  style="display: none;"href="Sobre">Sobre Nós</a></li>
                
             </ul>
-           
             <div class="menu-openner"><span>0</span>🛒</div>
     </nav>
     

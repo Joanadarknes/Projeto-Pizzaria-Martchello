@@ -203,7 +203,6 @@ header h1 {
 }
 
 .vermenu {
-
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -1099,7 +1098,7 @@ footer {
     position: absolute;
     content: '';
     height: 2px;
-    width: 100%;
+    width: 89%;
     background: #1a1a1a;
     top: -10px;
 }

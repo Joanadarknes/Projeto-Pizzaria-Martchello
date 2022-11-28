@@ -19,8 +19,12 @@
 
 <body>
     <nav>
-        <h2 class="logo">Martchello <span> Pizzaria </span></h2>
-        <button type="button"><a href="/">Home</a></button>
+        <!-- hamburguer -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+         </label>
 
         <ul>
             <li><a href="pedidoRestaurante">Pedidos-Restaurante</a></li>
@@ -44,116 +48,98 @@
         </div>
     </div>
 </div>
-
 </section>
 
 <h1 class="txtPt">Time de desenvolvimento</h1>
 <section class="corpo">
 
-
-    <section>
-
-    <!-- card 1 -->
-
-    <div class="card1 card">
-        <div class="card-info">
-            <p class="title">Guilherme da Rocha</p>
-            <p class="subtitle">Web Dev</p>
+    <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <!--- <img src="images/profile1.jpg" alt="">--->
+                        </div>
+                        <div class="details">
+                            <div class="name">Joana D'arc</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <!--- <img src="images/profile2.jpg" alt="">--->
+                        </div>
+                        <div class="details">
+                            <div class="name">Guilherme da Rocha Salvador</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <!-- <img src="images/profile3.jpg" alt="">---->
+                        </div>
+                        <div class="details">
+                            <div class="name">Danillo Macário da Silva</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <!---<img src="images/profile4.jpg" alt="">--->
+                        </div>
+                        <div class="details">
+                            <div class="name">Lucas Stoico Quirino</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <!--<img src="images/profile5.jpg" alt="">---->
+                        </div>
+                        <div class="details">
+                            <div class="name">Ricardo Anderson</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <!--<img src="images/profile6.jpeg" alt="">--->
+                        </div>
+                        <div class="details">
+                            <div class="name">Rian dos Santos</div>
+                            <div class="job">Web Devloper</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-       <!-- card 2-->
-
-    <div class="card2 card">
-        <div class="card-info">
-            <p class="title">Danillo Macário</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-           <!-- card 3-->
-
-
-    <div class="card3 card">
-        <div class="card-info">
-            <p class="title">Lucas Stoico Quirino</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-           <!-- card 4-->
-
-
-    <div class="card4 card">
-        <div class="card-info">
-            <p class="title"> Lucas Felipe</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-               <!-- card 5-->
-
-    <div class="card5 card">
-        <div class="card-info">
-            <p class="title">Rian dos Santos</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-        
-               <!-- card 6-->
-
-    <div class="card6 card">
-        <div class="card-info">
-            <p class="title">Joana D'arc</p>
-            <p class="subtitle">Desenvolvedora Web</p>
-        </div>
-        <div class="card-bio">
-            <p>Responsavel pelo desenvolvimento do site e o Bot</p>
+        <div class="button">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
         </div>
     </div>
-    </div>
-
-        
-               <!-- card 7-->
-
-    <div class="card7 card">
-        <div class="card-info">
-            <p class="title">Ricardo</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-</section>
 </section>
 </body>
+
 <script>
     $SCRIPT_ROOT = {{ request.script_root | tojson }};
 </script>
+
 <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>

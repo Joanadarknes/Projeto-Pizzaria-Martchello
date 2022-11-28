@@ -1,11 +1,130 @@
+.container{
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+  }
+  .container .main-card{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200%;
+    transition: 1s;
+  }
+  #two:checked ~ .main-card{
+    margin-left: -100%;
+  }
+  .container .main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+  .main-card .cards .card{
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+  }
+  .main-card .cards .card:hover{
+    transform: translateY(-15px);
+  }
+  .cards .card .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #ff0000;
+    margin-bottom: 14px;
+  }
+  .card .content .img img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .card .content .name{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .card .content .job{
+    font-size: 20px;
+    color: #ff0000;
+  }
+  .card .content .media-icons{
+    margin-top: 10px;
+    display: flex;
+  
+  }
+  .media-icons a{
+    text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    font-size: 14px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #ff0000;
+    transition: all 0.3s ease;
+  }
+  .media-icons a:hover{
+    color: #ff0000;
+    background-color: #fff;
+    border-color: #ff0000;
+  }
+   .container .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .button label{
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .button label.active{
+    width: 35px;
+  }
+  #one:checked ~ .button .one{
+    width: 35px;
+  }
+  #one:checked ~ .button .two{
+    width: 15px;
+  }
+  #two:checked ~ .button .one{
+    width: 15px;
+  }
+  #two:checked ~ .button .two{
+    width: 35px;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+
 .fundosb{
     background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("https://raw.githubusercontent.com/briancodex/react-restaurant-website-v1/main/src/images/pizza-1.jpg") center no-repeat;
     background-size: cover;
     padding: 20px;
 }
   
-
-
 section{
     justify-content: center;
     align-items: center;
@@ -25,52 +144,7 @@ section{
     padding: 50px;
     color: white;
 }
-.card {
-    border-radius: 20px;
-    width: 190px;
-    height: 254px;
-    position: relative;
-    outline: .2em solid #f5f5f5;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,45,45,1) 100%);
-   }
-   
-   .card::before {
-    border-radius: 20px;
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 4;
-    background-color: rgba(80, 44, 44, 0);
-    transition: background-color 1s;
-   }
-   
-   .card-info {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    padding: 1.5em;
-    text-align: center;
-    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-   }
-   
-   .card-bio {
-    padding: 1.8em;
-    text-align: center;
-    transform: translate(100%,40%);
-    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-   }
-   
-   .card-bio p {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5em;
-   }
-   
-   
+    
    /*Text*/
    .title {
     font-size: 1.3em;
@@ -90,61 +164,14 @@ section{
     font-weight: 400;
     line-height: 1em;
    }
-   
-   
-   
-   /*Hover*/
-   .card:hover::before {
-    background-color: rgba(80, 44, 44, 0.25);
-   }
-   
-   .card:hover .card-info {
-    transform: translateX(-100%);
-   }
-   
-   .card:hover .card-bio {
-    transform: translate(0,40%);
-    opacity: 1;
-   }
-   
-   
-.card1{
-background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M=");
-background-size: contain;
-   }
-.card2{
-    background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M=");
-    background-size: contain;
-}
-.card3{
-    background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M="); 
-    background-size: contain;
-}
-.card4{
-    background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M=");
-    background-size: contain;
-}
-.card5{
-    background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M=");
-    background-size: contain;
-}
-.card6{
-    background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M=");
-    background-size: contain;
-}
-.card7{
-    background-image: url("https://media.istockphoto.com/vectors/cartoon-pizza-chef-character-mascot-vector-id892060088?k=6&m=892060088&s=170667a&w=0&h=mTQPxe_p6H3cAygvVMEcu8TjBIwY_uCGvAeU7Nfh04M=");
-    background-size: contain;
-}
 
 .firstAnimation{
-
     display: flex;
     margin: 0 auto;
-justify-content: center;
+    justify-content: center;
 }
-.cardsb {
-    
+
+.cardsb {  
     width: 1200px;
     height: 254px;
     background: rgb(0, 0, 0);
