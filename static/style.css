@@ -1222,3 +1222,14 @@ footer {
 #buttoncadastro {
     margin-top: 27px;
 }
+
+
+#buttonpdrest{
+    display: none;
+}
+ #buttonpdclt{
+    display: none;
+ }
+ #ajustee{
+    display: none;
+ }

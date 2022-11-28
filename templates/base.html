@@ -16,9 +16,9 @@
         <button id= "buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
             <ul>
                 <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
-                <li><a id="buttonpdrest" style="display: none;" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-                <li><a id="buttonpdclt"  style="display: none;" href="PedidoCliente">Andamento do pedido</a></li>
-                <li><a id="ajustee"  style="display: none;"href="Sobre">Sobre Nós</a></li>
+                <li><a id="buttonpdrest"  style="display:none;" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
+                <li><a id="buttonpdclt"  style="display:none;" href="PedidoCliente">Andamento do pedido</a></li>
+                <li><a id="ajustee"href="Sobre"  style="display:none;">Sobre Nós</a></li>
                
             </ul>
            
@@ -28,27 +28,27 @@
     <section class="inicio">
         <!-- aside do carrinho -->
         <aside>
-            <div class="cart--area">
-                <div class="menu-closer">❌</div>
-                <h1>Suas Pizzas</h1>
-                <div  id="nomepd" class="cart"></div>
-                <div  class="cart--details">
-                    <div class="cart--totalitem subtotal">
-                        <span>Subtotal</span>
-                        <span>R$ --</span>
-                    </div>
-                    <div class="cart--totalitem desconto">
-                        <span>Desconto</span>
-                        <span>R$ --</span>
-                    </div>
-                    <div class="cart--totalitem total big">
-                        <span>Total</span>
-                        <span id="valorpd">R$ --</span>
-                    </div>
-                    <div class="cart--finalizar"><a>Finalizar a compra</a></div>
-                </div>
-            </div>
-        </aside>
+           <div class="cart--area">
+               <div class="menu-closer">❌</div>
+               <h1>Suas Pizzas</h1>
+               <div class="cart"></div>
+               <div class="cart--details">
+                   <div class="cart--totalitem subtotal">
+                       <span>Subtotal</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--totalitem desconto">
+                       <span>Desconto</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--totalitem total big">
+                       <span>Total</span>
+                       <span id="valorpd" >R$ --</span>
+                   </div>
+                   <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
+               </div>
+           </div>
+       </aside>
        <!-- /aside do carrinho -->
        <header>
 
@@ -153,12 +153,11 @@
                 <div></div>
             </div>
             <div class="chatbox__footer">
-                <input type="text" placeholder="Diga !Ola / !Oi para Arthurito">
+                <input type="text" placeholder="Diga !Oi/!Ola para Arthurito">
                 <button class="chatbox__send--footer send__button">Enviar</button>
             </div>
         </div>
         <div class="chatbox__button">
-            <span>Faça seu pedido!</span>
             <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
         </div>
     </div>
