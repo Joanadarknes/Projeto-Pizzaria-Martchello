@@ -193,7 +193,6 @@ header h1 {
 }
 
 .vermenu {
-
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -1035,10 +1034,11 @@ footer{
   }
   
   .box .content:before{
+    
     position: absolute;
     content: '';
     height: 2px;
-    width: 100%;
+    width: 89%;
     background: #1a1a1a;
     top: -10px;
   }
@@ -1108,7 +1108,7 @@ footer{
     font-size: 23px;
     background: #1a1a1a;
     width: 45px;
-    height: 45px ;
+    height: 45px;
     line-height: 45px;
     text-align: center;
     border-radius: 50%;
@@ -1149,6 +1149,169 @@ footer{
     color: #d32f2f;
     text-decoration: none;
   }
+
+  .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+   nav ul button{
+    display: none;
+}
+
+  @media screen and (max-width: 900px){
+
+      .img-pizza{
+        display: none;
+    }
+
+    .cart--area {
+        margin-top: 30px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .vermenu{    
+        /*display: none;*/
+    }
+    .chatbox__button{
+        position: fixed;
+        bottom: 1px;
+        right: 12px;
+        height: 70px;
+    }
+      footer{
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+
+    .menu-openner{
+        right: 3%;
+        padding: 7px 7px;
+    }
+
+    .logo{
+		font-size: 25px;
+		padding-right: 130px;
+    }
+
+    .container .chatbox{
+        z-index: 99;
+        position: fixed;
+        bottom: 5%;
+    }
+
+    .pizza-area {
+        width: 100%;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    nav ul button{
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+}
+
+/*hamburguer*/
+
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    position: relative;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 1118px){
+    .logo{
+        left: 8%;
+    }
+
+}
+
+@media(max-width: 944px){
+    .logo{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+
+}
+
+@media(max-width: 860px){
+    label #btn{
+        display: block;
+    }
+
+    nav ul{
+        z-index: 99;
+    }
+
+    ul{  
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        width: 100%;
+        display: block;
+        margin: 10px;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+}
 
   #btnsair{
     text-align: center;
