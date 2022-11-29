@@ -40,8 +40,8 @@ $ python
 ```
 Execute
 ```
-$ python app.py e copie a URL com a porta de entrada. Ex: http://000.0.0.0:0000 e cole no navegador
+$ python app.py 
 ```
-
+Copie a URL com a porta de entrada. Ex: "http://000.0.0.0:0000" e cole no navegador
 
 
