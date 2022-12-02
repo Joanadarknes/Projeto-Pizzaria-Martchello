@@ -217,7 +217,7 @@
                 "!Pizza mista"
             ],
             "respostas": [
-                "Maravilha, qual primeiro sabor o(a) senhor(a) deseja? <br><br> Comando: <br><br> !Mista primeiro sabor <br><br> Ex: !Mista  Mussarela <br><br> Lista de primeiro sabor: <br><br> Calabresa <br> Mussarela <br> Quatro queijos <br> Banana com canela"
+                "Maravilha, qual primeiro sabor o(a) senhor(a) deseja? <br><br> Comando: <br><br> !Mista primeiro sabor <br><br> Ex: !Mista Frango com catupiry <br><br> Lista de primeiro sabor: <br><br> Frango com catupiry <br> Romeu e julieta <br> Capricciosa"
             ]
         },
         {
@@ -354,7 +354,7 @@
                 "!Mista capricciosa" 
             ],
             "respostas":[
-                "Primeiro sabor registrado! qual o segundo sabor? <br><br> Comando: <br><br> !Mista segundo sabor <br><br> Ex: !Mista  Brasileira <br><br> Lista de segundo sabor: <br><br> Brasileira <br> Portuguesa <br> Moda da casa <br> Chocolate com morango"
+                "Primeiro sabor registrado! qual o segundo sabor? <br><br> Comando: <br><br> !Mista segundo sabor <br><br> Ex: !Mista Diavola <br><br> Lista de segundo sabor: <br><br>Diavola <br> 4 Stagioni <br> Parmiggiana"
             ]
         },
         {
