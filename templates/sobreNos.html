@@ -17,15 +17,33 @@
 </head>
 
 <body>
-    <nav>
-        <h2 class="logo">Martchello <span> Pizzaria </span></h2>
-        <button type="button"><a href="/">Home</a></button>
+    <nav class="menumobile">
+        <!-- hamburguer -->
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+         </label>
 
-        <ul>
-            <li><a href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-            <li><a href="PedidoCliente">Pedidos-Clientes</a></li>
-            <li><a style="color:red;">Sobre Nós</a></li>
-        </ul>
+        <h2 class="logo">Martchello <span> Pizzaria </span></h2>
+        <button id="btnsair" onclick="logout()">Sair</button>
+            <ul>
+                <button id="buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
+                <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
+                <li><a id="ajustee" href="Sobre">Sobre Nós</a></li>       
+            </ul>
+            <div class="menu-openner"><span>0</span>🛒</div>
+    </nav>
+    <nav class="menudesk">
+       
+            <h2 style="padding-top: 0.9%;" class="logo">Martchello <span> Pizzaria </span></h2>
+            <button type="button"><a href="/">Home</a></button>
+         
+                <ul>
+                  <li><a  style="color:red;" href="Sobre">Sobre Nós</a></li>
+                </ul>
+      
+  
     </nav>
 
     <section class="fundosb">
@@ -35,7 +53,10 @@
     <div class="secondAnimation">
         <div class="cardsb">
             <h2>Historia da pizzaria</h2>
-           <P> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           <P>  Um grupo de seis amigos estudantes de tecnologia, sendo um deles de família italiana (Guilherme) com o sobrenome Marchello, que além de possuírem forte influencia da cultura em relação a fazer pizzas, não esqueceram e nem abandonaram os seus costumes, decidiram investir e seguir em frente com isso, após realizarem um projeto de criar uma marca e um site de vendas na faculdade.<br>
+                Com a ajuda da família para fazer pizzas únicas no sabor, e do conhecimento em tecnologia dos seus outros amigos, ambos começaram a divulgar fortemente suas ideias com panfletos, e, além disso, criando um site para a pizzaria, que possui um chatbot para o público realizar o pedido da pizza no mesmo.
+            Utilizando a própria casa da família e um quarto de bagunças ao lado que foi limpo e reformado com a ajuda de todos, o grupo transformou ali na própria Pizzaria Marchello existindo até hoje o lugar original, além das varias pela região.
+            
         </P>
         </div>
     </div>
@@ -46,104 +67,86 @@
 <h1 class="txtPt">Time de desenvolvimento</h1>
 <section class="corpo">
 
-
-    <section>
-
-    <!-- card 1 -->
-
-    <div class="card1 card">
-        <div class="card-info">
-            <p class="title">Guilherme da Rocha</p>
-            <p class="subtitle">Web Dev</p>
+    <div class="container">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                             <img src="/static/images/joana.jpg" alt="joana">
+                        </div>
+                        <div class="details">
+                            <div class="name">Joana D'arc</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="/static/images/Guilherme.jpg" alt="Guilherme">
+                        </div>
+                        <div class="details">
+                            <div class="name">Guilherme da Rocha Salvador</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="/static/images/Danilo.jpg" alt="Danilo">
+                        </div>
+                        <div class="details">
+                            <div class="name">Danillo Macário da Silva</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="/static/images/Lucas.jpg" alt="Lucas">
+                        </div>
+                        <div class="details">
+                            <div class="name">Lucas Stoico Quirino</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="/static/images/Ricardo.jpg" alt="Ricardo">
+                        </div>
+                        <div class="details">
+                            <div class="name">Ricardo Anderson</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <div class="img">
+                            <img src="/static/images/Rian.jpg" alt="Rian">-
+                        </div>
+                        <div class="details">
+                            <div class="name">Rian dos Santos</div>
+                            <div class="job">Web Devloper</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-       <!-- card 2-->
-
-    <div class="card2 card">
-        <div class="card-info">
-            <p class="title">Danillo Macário</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-           <!-- card 3-->
-
-
-    <div class="card3 card">
-        <div class="card-info">
-            <p class="title">Lucas Stoico Quirino</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-           <!-- card 4-->
-
-
-    <div class="card4 card">
-        <div class="card-info">
-            <p class="title"> Lucas Felipe</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-               <!-- card 5-->
-
-    <div class="card5 card">
-        <div class="card-info">
-            <p class="title">Rian dos Santos</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
-        
-               <!-- card 6-->
-
-    <div class="card6 card">
-        <div class="card-info">
-            <p class="title">Joana D'arc</p>
-            <p class="subtitle">Desenvolvedora Web</p>
-        </div>
-        <div class="card-bio">
-            <p>Responsavel pelo desenvolvimento do site e o Bot</p>
+        <div class="button">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
         </div>
     </div>
-    </div>
-
-        
-               <!-- card 7-->
-
-    <div class="card7 card">
-        <div class="card-info">
-            <p class="title">Ricardo</p>
-            <p class="subtitle">Web Dev</p>
-        </div>
-        <div class="card-bio">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </div>
-    </div>
-
 </section>
 </section>
 </body>
@@ -154,8 +157,9 @@
 <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
 <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
-<script src="./scripts.js"></script>
-<script src="./login.js"></script>
+<script>
+    
+</script>
 </body>
 
 </html>

@@ -23,12 +23,6 @@ def login():
 
     return render_template("login.html")  
 
-    
-@app.route("/pedidoRestaurante")
-
-def pedidoRestaurante():
-
-    return render_template("PedidosRestaurante.html")
 
 @app.route("/Sobre") 
 

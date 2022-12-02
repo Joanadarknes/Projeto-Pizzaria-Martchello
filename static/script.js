@@ -278,7 +278,7 @@ const finalizarCompra = () => {
         seleciona('header').style.display = 'flex'
         let valorpd = document.getElementById('valorpd').innerText;
         valorpd = valorpd.replace('R$ ', '').replace(',', '-');
-        window.location.href = 'http://127.0.0.1:5000/PedidoCliente?total=' +valorpd ;
+        window.location.href = 'http://127.0.0.1:5000/PedidoCliente?total=' + valorpd ;
     })
 }
 
@@ -317,3 +317,4 @@ adicionarNoCarrinho()
 atualizarCarrinho()
 fecharCarrinho()
 finalizarCompra()
+

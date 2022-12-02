@@ -61,7 +61,7 @@ span {
 nav {
     display: flex;
     padding-top: 10px;
-    padding-left: 10%;
+    padding-left: 7%;
     padding-right: 10%;
     background: black;
     padding-bottom: 0.50%;
@@ -72,8 +72,8 @@ nav {
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px 20px;
-    padding-top:4.5%;
+    padding: 10px 15px;
+    padding-top: 9.5%;
     margin-top: 0.4%;
 }
 
@@ -649,6 +649,7 @@ h2 {
     margin-top: 20px;
     border: 2px solid #63f77c;
     transition: all ease .2s;
+    display: none;
 }
 
 .cart--finalizar:hover {
@@ -778,7 +779,7 @@ h2 {
 
     .menu-openner {
         font-size: 1.5rem;
-        position: fixed;
+        margin-left: 76%;
     }
 }
 
@@ -797,8 +798,8 @@ h2 {
 
     .menu-openner {
         font-size: 1.5rem;
-        position: fixed;
-        z-index: 1
+        z-index: 1;
+        margin-left: 76%;
     }
 
     .img-pizza {
@@ -1098,22 +1099,19 @@ footer {
     position: absolute;
     content: '';
     height: 2px;
-    width: 89%;
+    width: 100%;
     background: #1a1a1a;
     top: -10px;
 }
 
 .left .content .social {
-    margin: 35px 0 0 45px;
+    margin: 35px 0 0 0px;
 }
 
-.left .content .social a {
-    padding: 0 5px;
-}
 
 .left .content .social a span {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background: #1a1a1a;
     margin-left: 9px;
     text-align: center;
@@ -1224,12 +1222,333 @@ footer {
 }
 
 
-#buttonpdrest{
+#buttonpdrest {
     display: none;
 }
- #buttonpdclt{
+
+#buttonpdclt {
     display: none;
- }
- #ajustee{
+}
+
+#ajustee {
     display: none;
- }
+    padding-top: 19.5% !important; 
+}
+
+
+@media(max-width: 900px) {
+
+    .menumobile {
+        display: flex !important;
+    }
+
+
+    .menu-openner {
+        font-size: 1.5rem;
+        z-index: 1;
+        margin-left: 76%;
+    }
+
+    .secondAnimation .cardsb {
+        max-width: 40%;
+        margin-left: 34%;
+    }
+
+    .cardsb h2 {
+        margin-top: -20px;
+    }
+
+    .cardsb p {
+        padding: 0px 41px 0px;
+        font-size: 65%;
+        font-weight: bolder;
+    }
+
+    .card {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .img-pizza {
+        display: none;
+    }
+
+    .Conteudo {
+        width: 89% !important;
+    }
+
+    nav {
+        margin-left: 15px;
+        padding-left: 0 !important;
+    }
+
+    /*hamburguer*/
+    label #btn,
+    label #cancel {
+        color: white;
+        font-size: 30px;
+        float: right;
+        position: relative;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    @media(max-width: 1118px) {
+        .logo {
+            left: 8%;
+        }
+
+        .img-pizza {
+            display: none;
+        }
+
+
+        .menu-openner {
+            font-size: 1.5rem;
+            z-index: 1;
+            margin-left: 76%;
+        }
+    }
+
+
+
+    @media(max-width: 944px) {
+        .logo {
+            left: 6%;
+            top: 20px;
+            width: 130px;
+        }
+
+
+        .menu-openner {
+            font-size: 1.5rem;
+            z-index: 1;
+            margin-left: 76%;
+        }
+
+        nav {
+            margin-left: 15px;
+            padding-left: 0 !important;
+        }
+
+        .menumobile {
+            display: flex !important;
+        }
+
+        .menudesk {
+            display: none !important;
+        }
+
+        .img-pizza {
+            display: none;
+        }
+    }
+
+    @media(max-width: 1200px) {
+
+        nav {
+            margin-left: 15px;
+            padding-left: 0 !important;
+        }
+
+
+        .menu-openner {
+            font-size: 1.5rem;
+            z-index: 1;
+            margin-left: 76%;
+        }
+
+        label #btn {
+            display: block;
+        }
+
+        .menumobile {
+            display: flex !important;
+        }
+
+        .menudesk {
+            display: none !important;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgb(255, 255, 255);
+            top: 96px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+
+        nav ul li {
+            width: 100%;
+            display: block;
+            margin: 10px;
+            line-height: 30px;
+            color: #000 !important;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+            color: #000 !important;
+        }
+
+        #check:checked~ul {
+            left: 0;
+            width: 80%;
+            z-index: 10;
+        }
+
+        #check:checked~label #btn {
+            display: none;
+        }
+
+        #check:checked~label #cancel {
+            display: block;
+        }
+
+        .img-pizza {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main-card .cards .card {
+            margin: 20px 0 10px 0;
+            width: calc(100% / 2 - 10px);
+        }
+
+        .img-pizza {
+            display: none;
+        }
+
+        .menumobile {
+            display: flex !important;
+        }
+
+        .menudesk {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .main-card .cards .card {
+
+            width: 100%;
+
+        }
+
+        .img-pizza {
+            display: none;
+        }
+    }
+
+    nav {
+        margin-left: 15px;
+        padding-left: 0 !important;
+    }
+
+    .menumobile {
+        display: flex;
+    }
+
+    .menudesk {
+        display: none !important;
+    }
+}
+
+.menumobile {
+    display: none;
+}
+
+
+.notinha{
+    display: flex;
+    justify-content: center;
+}
+
+.notinha, img{
+    height: 86%;
+}
+
+.cnpjpc{
+    padding-top: 30px;
+    font-weight: bolder;
+}
+
+.notinha p{
+    margin-top: 100px;
+    position:absolute;
+}
+
+.notinha h2{
+    font-size: 20px;
+    position: absolute;
+    padding-top: 70px;
+}
+.notinha h1{
+    letter-spacing: 0.5rem;
+    position: absolute;
+    padding-top: 170px;
+}
+
+.qr{
+    margin-top: 190px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+}
+
+.traço{
+    margin-top:140px;
+    position: absolute;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.traço2{
+    margin-top:320px;
+    position: absolute;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.horario{
+    margin-top:170px;
+    position: absolute;
+}
+
+#resultadopd{
+    position: absolute;
+    padding-top: 350px;
+    margin-left: 200px;
+}
+
+.relogio{
+    position: absolute;
+    padding-top: 170px;
+    display: flex;
+    color: #000;
+}
+.fundopd{
+    
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url("https://raw.githubusercontent.com/briancodex/react-restaurant-website-v1/main/src/images/pizza-1.jpg") center no-repeat;
+        background-size: cover;
+}
+
+#errofinalizarcp h1{
+    padding-top: 20px;
+    color: #ff0000;
+}
+
+.totalcomvl{
+    margin-top: 100px;
+}
