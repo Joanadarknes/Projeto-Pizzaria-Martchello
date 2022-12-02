@@ -2,6 +2,7 @@
 <html lang="en">
 <link rel="icon" href="static/images/favicon.png" />
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styleSobre.css') }}">
 <link href="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 <head>
@@ -9,7 +10,21 @@
     <title>Pizzaria Martchello</title>
 </head>
 <body>
-    <nav>
+   
+    <nav class="menudesk">
+      
+        <h2 class="logo">Martchello <span> Pizzaria </span></h2>
+        <button id="btnsair" onclick="logout()">Sair</button>
+        <button id= "buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
+            <ul>
+                <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
+                <li><a id="ajustee"  style="display: none;"href="Sobre">Sobre Nós</a></li>
+               
+            </ul>
+           
+            <div class="menu-openner"><span>0</span>🛒</div>
+    </nav>
+    <nav class="menumobile">
         <!-- hamburguer -->
         <input type="checkbox" id="check">
         <label for="check">
@@ -19,20 +34,17 @@
 
         <h2 class="logo">Martchello <span> Pizzaria </span></h2>
         <button id="btnsair" onclick="logout()">Sair</button>
-        <button id="buttoncadastro" type="button"><a href="login">Cadastre-se</a></button>
             <ul>
-                <button id="buttoncadastro-second" type="button"><a href="login">Cadastre-se</a></button>
                 <li><a id="navbarDropdown" data-toggle="dropdown"  style="color: red;"></a></li>
                 <li><a id="buttonpdrest" href="pedidoRestaurante">Pedidos-Restaurante</a></li>
                 <li><a id="buttonpdclt" href="PedidoCliente">Andamento do pedido</a></li>
                 <li><a id="ajustee" href="Sobre">Sobre Nós</a></li>       
             </ul>
             <div class="menu-openner"><span>0</span>🛒</div>
-    </nav>
-    
+        </nav>
     <section class="inicio">
         <!-- aside do carrinho -->
-        <aside>
+        <aside style="top: 0px;">
            <div class="cart--area">
                <div class="menu-closer">❌</div>
                <h1>Suas Pizzas</h1>
@@ -48,9 +60,10 @@
                    </div>
                    <div class="cart--totalitem total big">
                        <span>Total</span>
-                       <span>R$ --</span>
+                       <span id="valorpd" >R$ --</span>
                    </div>
-                   <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
+                   <div  id="errofinalizarcp"><h1>Para efetuar a compra, esteja logado!</h1></div>
+                   <div id="finalizarCP" class="cart--finalizar"><a>Finalizar a compra</a></div>
                </div>
            </div>
        </aside>
@@ -62,8 +75,6 @@
             <div>
             <h2>Mama mia martchello!</h2>
             <a href="#PizzasProntas" class="vermenu">Ver menu</a>
-
-            <a href="#PizzasProntas" class="vermenumobile"><img src="./images/seta_pra_baixo-removebg-preview.png" alt=""></a>
         </div>
 
         </div>
@@ -163,6 +174,7 @@
             </div>
         </div>
         <div class="chatbox__button">
+            <span>Faça seu pedido!</span>
             <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
         </div>
     </div>

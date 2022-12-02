@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="static/images/favicon.png" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Pedido do Cliente</title>
-  </head>
-  <body style="background-color: white;">
-    <nav>
-      <h2 class="logo">Martchello <span> Pizzaria </span></h2>
-      <button type="button"><a href="/">Home</a></button>
-   
-          <ul>
-            <li><a href="pedidoRestaurante">Pedidos-Restaurante</a></li>
-            <li><a href="pedidoCliente"  style="color:red;">Pedidos-Clientes</a></li>
-              <li><a href="Sobre">Sobre Nós</a></li>
-          </ul>
+<html lang="PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="static/images/favicon.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <title>Pedido do Cliente</title>
+</head>
 
+<body class="fundopd">
+  <nav>
+    <h2 style="padding-top: 0.9%;" class="logo">Martchello <span> Pizzaria </span></h2>
+    <button type="button"><a href="/">Home</a></button>
+    <ul>
+      <li><a href="pedidoCliente" style="color:red;">Pedidos-Clientes</a></li>
+      <li><a href="Sobre">Sobre Nós</a></li>
+    </ul>
   </nav>
-  <aside>
-    <div class="cart--area">
-        <h1>Suas Pizzas</h1>
-        <div class="cart"></div>
-        <div class="cart--details">
+  <section class="notinha">
+    <img src="/static/images/notinha.png" alt="notinha">
+    <h2>PIZZARIA MARTCHELLO</h2>
+    <p>Rua Xpto 999 - Jardins São Paulo-SP</p>
+    <p class="cnpjpc">CNPJ 000400028922</p>
+    <span class="traço">__________________________________</span>
+    <h1>CUPOM FISCAL</h1>
+    <img class="qr" src="/static/images/QR CODE.png" alt="QR">
+    <h2 style="position: absolute; padding-top: 250px; display: flex; color: #000; padding-right:200px;" class="totalcomvl">TOTAL:</h2>
+    <h2 id="resultadopd"></h2>
+    <span class="traço2">__________________________________</span>
+  </section>
+</body>
 
-            <div class="cart--finalizar"><a href="PedidoCliente">Finalizar a compra</a></div>
-        </div>
-    </div>
-</aside>
-  </body>
-
-  <script>
-    $SCRIPT_ROOT = {{ request.script_root|tojson }};
+<script>
+  $SCRIPT_ROOT = {{ request.script_root | tojson }};
 </script>
 <script type="text/javascript" src="{{ url_for('static', filename='popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.5.1.slim.min.js') }}"></script>
@@ -54,19 +52,16 @@
 <script type="text/javascript" src="{{ url_for('static', filename='auth.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='init.js') }}"></script>
 <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
-<script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-  crossorigin="anonymous"
-></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
 
-<script>
-  $("#sidebar-toggle").click(function (e) {
-    e.preventDefault()
-    $("#page").toggleClass("toggled")
-  })
+<script type="text/javascript">
+  const urlParams = new URLSearchParams(window.location.search);
+  const total = urlParams.get('total').replace('-', ',');
+  document.getElementById('resultadopd').innerText = total;
+  
 </script>
-  </body>
+</body>
+
 </html>
