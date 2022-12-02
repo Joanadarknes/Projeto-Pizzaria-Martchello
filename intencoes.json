@@ -26,7 +26,7 @@
                 "!Sabores"
             ],
             "respostas":[
-                "Sabores de Pizza\n <br><br> Salgadas:\n <br><br> Mussarela<br> Calabresa<br> Quatro Queijos<br> Brasileira<br> Portuguesa<br> Moda da casa<br> <br><br> Doce:\n <br><br> Banana com canela<br> Morango com chocolate"
+                "Sabores de Pizza\n <br><br> Salgadas:\n <br><br> Mussarela<br> Calabresa<br> Quatro Queijos<br> Brasileira<br> Portuguesa<br> Moda da casa<br> Frango com catupiry <br>  Capricciosa <br> Diavola <br> 4 Stagioni <br> Parmiggiana <br><br> Doce:\n <br><br> Banana com canela<br> Morango com chocolate <br> Romeu e julieta <br><br> Digite 'PizzaInfo + sabor da pizza' para ver os detalhes sobre a mesma."
             ]
         },
         {
@@ -91,6 +91,60 @@
             ],
             "respostas":[
                 "Informacao da Pizza <br><br> Nome: Pizza a Moda da Casa\n <br> Preco: R$35.00\n <br> Ingredientes: Molho de tomate, mussarela, carne de sol, tomates em cubos, coentro, cebola, azeitona, catupiry e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_frango_com_catupiry",
+            "padroes":[
+                "!PizzaInfo frango com catupiry"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Frango com catupiry\n <br> Preco: R$25.50\n <br> Ingredientes: Molho de tomate, peito de frango, oregano, queijo catupiry, sal, cebola, pimenta e salsinha"
+            ]
+        },
+        {
+            "acao":"pizza_info_Romeu_e_julieta",
+            "padroes":[
+                "!PizzaInfo Romeu e julieta"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Romeu e julieta\n <br> Preco: R$35.50\n <br> Ingredientes: Goiabada em pedacinhos, requeijao, leite condensado, farinha de trigo, sal, leite e margarina"
+            ]
+        },
+        {
+            "acao":"pizza_info_Capricciosa",
+            "padroes":[
+                "!PizzaInfo Capricciosa"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Capricciosa\n <br> Preco: R$40.50\n <br> Ingredientes: lcachofras, funghi, azeitonas pretas e presunto cru"
+            ]
+        },
+        {
+            "acao":"pizza_info_Diavola",
+            "padroes":[
+                "!PizzaInfo Diavola"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Diavola\n <br> Preco: R$45.50\n <br> Ingredientes: salame picante (ou pepperoni americano) e azeite picante em uma base de pizza Marguerita"
+            ]
+        },
+        {
+            "acao":"pizza_info_4_stagioni",
+            "padroes":[
+                "!PizzaInfo 4 stagioni"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: 4 Stagioni\n <br> Preco: R$47.50\n <br> Ingredientes: sazeitonas pretas, presunto, alcachofra, cogumelos, molho de tomate e mussarela"
+            ]
+        },
+        {
+            "acao":"pizza_info_parmiggiana",
+            "padroes":[
+                "!PizzaInfo Parmiggiana"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Parmiggiana\n <br> Preco: R$55.50\n <br> Ingredientes: fatias de berinjela a dore, cobertas com mussarela, molho de tomate e queijo parmesao ralado."
             ]
         },
         {
@@ -221,6 +275,60 @@
             ]
         },
         {
+            "acao": "completa_sabor_Frango_com_catupiry",
+            "padroes":[
+                "!Frango com catupiry"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de Frango com catupiry, ela ira custar R$25,50 <br><br> Comando: <br><br> !Pagamento"
+            ]
+        },
+        {
+            "acao": "completa_sabor_romeu_e_julieta",
+            "padroes":[
+                "!Romeu e julieta"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de romeu e julieta, ela ira custar R$35,50 <br><br> Comando: <br><br> !Pagamento"
+            ]
+        },
+        {
+            "acao": "completa_sabor_capricciosa",
+            "padroes":[
+                "!Capricciosa"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de capricciosa, ela ira custar R$40,50 <br><br> Comando: <br><br> !Pagamento"
+            ]
+        },
+        {
+            "acao": "completa_sabor_diavola",
+            "padroes":[
+                "!Diavola"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de diavola, ela ira custar R$45,50 <br><br> Comando: <br><br> !Pagamento"
+            ]
+        },
+        {
+            "acao": "completa_sabor_4_stagioni",
+            "padroes":[
+                "!4 stagioni"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de 4 stagioni, ela ira custar R$47,50 <br><br> Comando: <br><br> !Pagamento"
+            ]
+        },
+        {
+            "acao": "completa_sabor_parmiggiana",
+            "padroes":[
+                "!parmiggiana"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de parmiggiana, ela ira custar R$55,50 <br><br> Comando: <br><br> !Pagamento"
+            ]
+        },
+        {
             "acao": "completa_sabor_banana_com_canela",
             "padroes":[
                 "!Completa banana com canela"
@@ -241,10 +349,9 @@
         {
             "acao": "primeiro_sabor_misto",
             "padroes":[
-                "!Mista calabresa",
-                "!Mista mussarela",
-                "!Mista quatro queijos",
-                "!Mista banana com canela"
+                "!Mista frango com catupiry",
+                "!Mista romeu e julieta",
+                "!Mista capricciosa" 
             ],
             "respostas":[
                 "Primeiro sabor registrado! qual o segundo sabor? <br><br> Comando: <br><br> !Mista segundo sabor <br><br> Ex: !Mista  Brasileira <br><br> Lista de segundo sabor: <br><br> Brasileira <br> Portuguesa <br> Moda da casa <br> Chocolate com morango"
@@ -252,14 +359,13 @@
         },
         {
             "acao": "segundo_sabor_misto",
-            "padroes":[
-                "!Mista brasileira",
-                "!Mista portuguesa",
-                "!Mista moda da Casa",
-                "!Mista chocolate com morango"
+            "padroes":[ 
+                "!Mista diavola",
+                "!Mista 4 stagioni",
+                "!Mista parmiggiana"
             ],
             "respostas":[
-                "Pizza mista registrada! o valor e de R$XX,XX. <br><br> Comando: <br><br> !Pagamento"
+                "Pizza mista registrada! o valor e de R$60,00. <br><br> Comando: <br><br> !Pagamento"
             ]
         },
         {
@@ -277,7 +383,7 @@
                 "!Pix"
             ],
             "respostas": [
-                "Opcao pix confirmada! Insira a sua chave pix <br><br> Comando: <br><br> !Telefone <br> !CPF"
+                "Opcao pix confirmada! Envie um pix para uma dessas chaves <br><br> Comando: <br><br> !Telefone <br> !CPF <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
             ]
         },
         {
@@ -286,7 +392,7 @@
                 "!Telefone"
             ],
             "respostas": [
-                "Chave pix telefone, insira seu telefone <br><br> Comando: <br><br> !Telefone Numero <br><br> Ex: !Telefone (99)99999-9999"
+                "Chave pix telefone, insira seu telefone <br><br> Comando: <br><br> !Telefone Numero <br><br> Ex: !Telefone (99)99999-9999 <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
             ]
         },
         {
@@ -304,7 +410,7 @@
                 "!CPF"
             ],
             "respostas": [
-                "Chave pix telefone, insira seu CPF <br><br> Comando: <br><br> !CPF Numero do CPF <br><br> Ex: !CPF 000.000.000-00"
+                "Chave pix telefone, insira seu CPF <br><br> Comando: <br><br> !CPF Numero do CPF <br><br> Ex: !CPF 000.000.000-00 <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
             ]
         },
         {
@@ -331,7 +437,7 @@
                 "!Sim Retirar"
             ],
             "respostas": [
-                "Opcao retirar na loja confirmada! sua pizza ficara pronta em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento "
+                "Opcao retirar na loja confirmada! sua pizza ficara pronta em 30 a 40 minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento "
             ]
         },
         {
@@ -340,7 +446,7 @@
                 "!Nao Retirar"
             ],
             "respostas": [
-                "Opcao retirar na loja negada! Por favor pedimos que selecionasse outra forma de pagamento.  <br><br> Comando: <br><br> !Pix <br> !Cartao de credito <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
+                "Opcao retirar na loja negada! Por favor pedimos que selecionasse outra forma de pagamento.  <br><br> Comando: <br><br> !Pix <br> !Cartao de credito <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar "
             ]
         },
         {
@@ -349,7 +455,7 @@
                 "!Cartao de credito"
             ],
             "respostas": [
-                "Opcao cartao de credito confirmada! Deseja pagar na loja ? <br><br> Comando: <br><br> !Pagar na loja <br> !Pagar usando bot <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
+                "Opcao cartao de credito confirmada! Deseja pagar na loja ? <br><br> Comando: <br><br> !Pagar na loja <br> !Pagar na entrega <br><br> Caso queira cancelar o pedido: <br><br> !Cancelar"
             ]
         },
         {
@@ -358,52 +464,16 @@
                 "!Pagar na loja"
             ],
             "respostas": [
-                "Opcao pagar na loja (cartao de credito) confirmada! sua pizza ficara pronta em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento"
+                "Opcao pagar na loja (cartao de credito) confirmada! sua pizza ficara pronta em 30 a 40 minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento"
             ]
         },
         {
-            "acao": "pagar_cartao_de_credito_bot",
+            "acao": "pagar_cartao_de_credito_entrega",
             "padroes":[
-                "!Pagar usando bot"
+                "!Pagar na entrega"
             ],
             "respostas": [
-                "Opcao pagar usando o bot confirmada! Insira os dados do seu cartao: <br><br> Comando: <br><br> !Nome do titular <br><br> Ex: !Nome XXXXX"
-            ]
-        },
-        {
-            "acao": "pagar_cartao_de_credito_bot_titular",
-            "padroes":[
-                "!Nome XXXXX"
-            ],
-            "respostas": [
-                "Titular confirmado! insira o numero do cartao <br><br> Comando: <br><br> !Numero do cartao <br><br> Ex: !Numero XXXX XXXX XXXX XXXX"
-            ]
-        },
-        {
-            "acao": "pagar_cartao_de_credito_bot_numero",
-            "padroes":[
-                "!Numero XXXX XXXX XXXX XXXX"
-            ],
-            "respostas": [
-                "Numero confirmado! insira a data de validade do cartao <br><br> Comando: <br><br> !Validade do cartao <br><br> Ex: !Validade XX/YYYY"
-            ]
-        },
-        {
-            "acao": "pagar_cartao_de_credito_bot_validade",
-            "padroes":[
-                "!Validade XX/YYYY"
-            ],
-            "respostas": [
-                "Validade confirmada! insira o numero de seguranca do cartao <br><br> Comando: <br><br> !Seguranca do cartao <br><br> Ex: !Seguranca XXX"
-            ]
-        },
-        {
-            "acao": "pagar_cartao_de_credito_bot_seguranca",
-            "padroes":[
-                "!Seguranca XXX"
-            ],
-            "respostas": [
-                "Numero de seguranca confirmada! Pagamento realizado. <br><br> Deseja retirar na loja ou entregador? <br><br> Comando: <br><br> !Retirar <br> !Entregador "
+                "Opcao pagar na Entrega com uso de maquininha (cartao de credito) confirmada! por favor insira o seu CEP. <br><br> Comando: <br><br> !CEP <br><br> Ex: !CEP XXXXX - XXX"
             ]
         },
         {
@@ -412,7 +482,7 @@
                 "!Retirar"
             ],
             "respostas": [
-                "Opcao Retirar na loja confirmada, seu pedido ficara pronto em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento "
+                "Opcao Retirar na loja confirmada, seu pedido ficara pronto em 30 a 40 minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento "
             ]
         },
         {
@@ -442,7 +512,7 @@
                 "!Quatro numeros XXXX"
             ],
             "respostas": [
-                "Numero confirmado, casa identificada o prazo de entrega sera em XX minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento  "
+                "Numero confirmado, casa identificada o prazo de entrega sera em 30 a 40 minutos, obrigado pela preferencia! <br><br> Digite '!Sair' para encerrar o atendimento  "
             ]
         },
         {

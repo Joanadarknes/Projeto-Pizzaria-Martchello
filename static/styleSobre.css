@@ -129,7 +129,7 @@ section{
     justify-content: center;
     align-items: center;
     display:grid ;
-    grid-template-columns: repeat(4, 300px);
+
     grid-auto-rows: auto;
     grid-gap: 2rem;
 }
@@ -180,7 +180,6 @@ section{
   }
 
   .cardsb h2{
-    padding-bottom: 10px;
     padding-top: 40px;
     align-items: center;
     color: white;
@@ -222,3 +221,105 @@ section{
     }
   }
 
+  @media(max-width: 900px){
+    .secondAnimation .cardsb{
+      max-width: 40%;
+      margin-left: 34%;
+    }
+
+    .cardsb p{
+      font-size: 75%;
+      font-weight: bolder;
+    }
+
+    .card{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+/*hamburguer*/
+label #btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    position: relative;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media(max-width: 1118px){
+    .logo{
+        left: 8%;
+    }
+}
+
+@media(max-width: 944px){
+    .logo{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+    }
+
+}
+
+@media(max-width: 1200px){
+    label #btn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        width: 100%;
+        display: block;
+        margin: 10px;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #cancel{
+        display: block;
+    }
+ }
+
+@media (max-width: 768px) {
+    .main-card .cards .card{
+      margin: 20px 0 10px 0;
+      width: calc(100% / 2 - 10px);
+    }
+  }
+  @media (max-width: 600px) {
+    .main-card .cards .card{
+      /* margin: 20px 0 10px 0; */
+      width: 100%;
+    }
+  }
+}

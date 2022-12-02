@@ -3,6 +3,9 @@ var botaocads2 = document.getElementById("buttonpdrest");
 
 var ajustando = document.getElementById("ajustee");
 var btnsair = document.getElementById("btnsair");
+var finalizarcompra = document.getElementById("finalizarCP");
+var errorfmcp = document.getElementById("errofinalizarcp");
+
 
 let currentUser = {}
 
@@ -20,6 +23,8 @@ function getUser() {
 
       ajustando.style.display = 'flex'
       btnsair.style.display= 'flex'
+      finalizarcompra.style.display= 'block' 
+      errorfmcp.style.display= 'none'
      
     } else {
       swal
