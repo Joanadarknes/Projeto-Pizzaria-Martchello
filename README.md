@@ -6,7 +6,6 @@
 ## 🍕 Proposta de projeto: 
 - Uma Pizzaria com chatbot, Os clientes consegue realizar o login no site e fazer o pedido desejado através do chatbot caso não tenha uma opção do seu agrado no nosso menu.
 
-
 # ⚙️ Linguagens do projeto: <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)" />
 
 ### 📁 Banco de dados:
