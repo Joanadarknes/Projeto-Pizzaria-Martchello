@@ -40,3 +40,8 @@ $ python app.py
 Copie a URL com a porta de entrada. Ex: "http://000.0.0.0:0000" e cole no navegador
 
 
+## Tela principal(tem mais abas e o chat bot):
+![image](https://github.com/Joanadarknes/Projeto-Pizzaria-Martchello/assets/95653155/c9d052b2-0718-4804-b7c2-223689ce4889)
+
+
+
