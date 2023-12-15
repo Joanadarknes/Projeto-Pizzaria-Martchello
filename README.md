@@ -1,13 +1,10 @@
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=yellow&style=for-the-badge)
 
 
-
 # 💡 Projeto-Semestral Pizzaria Martchello
 
 ## 🍕 Proposta de projeto: 
 - Uma Pizzaria com chatbot, Os clientes consegue realizar o login no site e fazer o pedido desejado através do chatbot caso não tenha uma opção do seu agrado no nosso menu.
-
-![image](https://media.licdn.com/dms/image/C4D22AQFgNoljIvh0Kw/feedshare-shrink_800/0/1671070740506?e=1686787200&v=beta&t=H5t9JKGjT4NYKx66rXojoZEkTHrBPdFvzhkSWMvnkqQ)
 
 
 # ⚙️ Linguagens do projeto: <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)" />
